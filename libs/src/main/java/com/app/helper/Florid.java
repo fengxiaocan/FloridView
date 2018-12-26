@@ -25,7 +25,7 @@ public class Florid {
 	public static void initStroke(StrokeView strokeView,TypedArray a) {
 		ColorStateList color  = a.getColorStateList(R.styleable.FloridAttrs_florid_stroke_color);
 		if (color == null){
-			color = ColorStateList.valueOf(Color.parseColor("#12345678"));
+			color = ColorStateList.valueOf(Color.TRANSPARENT);
 		}
 		if (color != null) {
 			strokeView.setStroke(color);
