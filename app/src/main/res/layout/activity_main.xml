@@ -22,6 +22,7 @@
             android:text="牛马啊"
             android:textColor="@color/colorAccent"
             android:textSize="16sp"
+            android:elevation="5dp"
             app:florid_cornerRadius="10dp"
             app:florid_elevation="30dp"
             app:florid_elevationShadowColor="#999915f4">

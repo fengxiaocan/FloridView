@@ -50,22 +50,22 @@ public class FloridRelativeLayout extends RelativeLayout implements ShadowLayout
 	
 	@Override
 	public void setElevation(float elevation) {
-		mFloridHelper.setElevation(elevation);
+		if (mFloridHelper != null) 				mFloridHelper.setElevation(elevation); 			else setSuperElevation(elevation);
 	}
 	
 	@Override
 	public float getElevation() {
-		return mFloridHelper.getElevation();
+		if (mFloridHelper != null) 			return mFloridHelper.getElevation(); 		else return super.getElevation();
 	}
 	
 	@Override
 	public void setTranslationZ(float translationZ) {
-		mFloridHelper.setTranslationZ(translationZ);
+		if (mFloridHelper != null) 		mFloridHelper.setTranslationZ(translationZ); 		else setSuperTranslationZ(translationZ);
 	}
 	
 	@Override
 	public float getTranslationZ() {
-		return mFloridHelper.getTranslationZ();
+		if (mFloridHelper != null) 		return mFloridHelper.getTranslationZ(); 		else return super.getTranslationZ();
 	}
 	
 	@Override

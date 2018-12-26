@@ -20,7 +20,7 @@ import com.app.view.SizeView;
 import com.app.view.StrokeView;
 
 public class FloridTextView extends TextView implements ShadowView, RoundedCornersView, StrokeView, SizeView {
-	private FloridViewHelper mFloridHelper  = new FloridViewHelper(this);
+	private FloridViewHelper mFloridHelper = new FloridViewHelper(this);
 	
 	public FloridTextView(Context context) {
 		super(context);
@@ -47,22 +47,26 @@ public class FloridTextView extends TextView implements ShadowView, RoundedCorne
 	
 	@Override
 	public float getElevation() {
-		return mFloridHelper.getElevation();
+		if (mFloridHelper != null) { return mFloridHelper.getElevation(); }
+		else { return super.getElevation(); }
 	}
 	
 	@Override
 	public void setElevation(float elevation) {
-		mFloridHelper.setElevation(elevation);
+		if (mFloridHelper != null) { mFloridHelper.setElevation(elevation); }
+		else { setSuperElevation(elevation); }
 	}
 	
 	@Override
 	public float getTranslationZ() {
-		return mFloridHelper.getTranslationZ();
+		if (mFloridHelper != null) { return mFloridHelper.getTranslationZ(); }
+		else { return super.getTranslationZ(); }
 	}
 	
 	@Override
 	public void setTranslationZ(float translationZ) {
-		mFloridHelper.setTranslationZ(translationZ);
+		if (mFloridHelper != null) { mFloridHelper.setTranslationZ(translationZ); }
+		else { setSuperTranslationZ(translationZ); }
 	}
 	
 	@Override
@@ -168,22 +172,22 @@ public class FloridTextView extends TextView implements ShadowView, RoundedCorne
 	
 	@Override
 	public void setWidth(int width) {
-		if (mFloridHelper != null) mFloridHelper.setWidth(width);
+		if (mFloridHelper != null) { mFloridHelper.setWidth(width); }
 	}
 	
 	@Override
 	public void setHeight(int height) {
-		if (mFloridHelper != null) mFloridHelper.setHeight(height);
+		if (mFloridHelper != null) { mFloridHelper.setHeight(height); }
 	}
 	
 	@Override
 	public void setSize(int width,int height) {
-		if (mFloridHelper != null) mFloridHelper.setSize(width,height);
+		if (mFloridHelper != null) { mFloridHelper.setSize(width,height); }
 	}
 	
 	@Override
 	public void setBounds(int x,int y,int width,int height) {
-		if (mFloridHelper != null) mFloridHelper.setBounds(x,y,width,height);
+		if (mFloridHelper != null) { mFloridHelper.setBounds(x,y,width,height); }
 	}
 	
 	
@@ -192,52 +196,53 @@ public class FloridTextView extends TextView implements ShadowView, RoundedCorne
 	@Override
 	protected void onLayout(boolean changed,int l,int t,int r,int b) {
 		super.onLayout(changed,l,t,r,b);
-		if (mFloridHelper != null) mFloridHelper.onLayout(changed);
+		if (mFloridHelper != null) { mFloridHelper.onLayout(changed); }
 	}
 	
 	
 	@SuppressLint("MissingSuperCall")
 	@Override
 	public void draw(@NonNull Canvas canvas) {
-		if (mFloridHelper != null) mFloridHelper.draw(canvas);
+		if (mFloridHelper != null) { mFloridHelper.draw(canvas); }
 	}
-	
 	
 	
 	@Override
 	protected void drawableStateChanged() {
 		super.drawableStateChanged();
-		if (mFloridHelper != null) mFloridHelper.drawableStateChanged();
+		if (mFloridHelper != null) { mFloridHelper.drawableStateChanged(); }
 	}
 	
 	@Override
 	public void invalidateDrawable(@NonNull Drawable drawable) {
 		super.invalidateDrawable(drawable);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void invalidate(@NonNull Rect dirty) {
 		super.invalidate(dirty);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void invalidate(int l,int t,int r,int b) {
 		super.invalidate(l,t,r,b);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void invalidate() {
 		super.invalidate();
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void postInvalidateDelayed(long delayMilliseconds) {
 		super.postInvalidateDelayed(delayMilliseconds);
-		if (mFloridHelper != null) mFloridHelper.postInvalidateParentIfNeededDelayed(delayMilliseconds);
+		if (mFloridHelper != null) {
+			mFloridHelper.postInvalidateParentIfNeededDelayed(delayMilliseconds);
+		}
 	}
 	
 	@Override
@@ -245,50 +250,52 @@ public class FloridTextView extends TextView implements ShadowView, RoundedCorne
 			long delayMilliseconds,int left,int top,int right,int bottom)
 	{
 		super.postInvalidateDelayed(delayMilliseconds,left,top,right,bottom);
-		if (mFloridHelper != null) mFloridHelper.postInvalidateParentIfNeededDelayed(delayMilliseconds);
+		if (mFloridHelper != null) {
+			mFloridHelper.postInvalidateParentIfNeededDelayed(delayMilliseconds);
+		}
 	}
 	
 	
 	@Override
 	public void setRotation(float rotation) {
 		super.setRotation(rotation);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void setRotationY(float rotationY) {
 		super.setRotationY(rotationY);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void setRotationX(float rotationX) {
 		super.setRotationX(rotationX);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void setScaleX(float scaleX) {
 		super.setScaleX(scaleX);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void setScaleY(float scaleY) {
 		super.setScaleY(scaleY);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void setPivotX(float pivotX) {
 		super.setPivotX(pivotX);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void setPivotY(float pivotY) {
 		super.setPivotY(pivotY);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
@@ -297,18 +304,18 @@ public class FloridTextView extends TextView implements ShadowView, RoundedCorne
 					to = 1.0) float alpha)
 	{
 		super.setAlpha(alpha);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void setTranslationX(float translationX) {
 		super.setTranslationX(translationX);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 	
 	@Override
 	public void setTranslationY(float translationY) {
 		super.setTranslationY(translationY);
-		if (mFloridHelper != null) mFloridHelper.invalidateParentIfNeeded();
+		if (mFloridHelper != null) { mFloridHelper.invalidateParentIfNeeded(); }
 	}
 }
