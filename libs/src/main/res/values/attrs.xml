@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="florid_elevation" format="dimension" />
+    <attr name="florid_elevationShadowColor" format="reference|color" />
+    <attr name="florid_elevationAmbientShadowColor" format="reference|color" />
+    <attr name="florid_elevationSpotShadowColor" format="reference|color" />
+    <attr name="florid_stroke_color" format="reference|color" />
+    <attr name="florid_strokeWidth" format="dimension" />
+    <attr name="florid_cornerRadius" format="dimension"/>
+
+    <!--真正用于解析的属性-->
+    <declare-styleable name="FloridAttrs">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+
+
+
+
+
+    <!--假体,用于提示-->
+    <declare-styleable name="FloridRelativeLayout">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridLinearLayout">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridFrameLayout">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridButton">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridCheckBox">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridImageView">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridTextView">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridView">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridCoordinatorLayout">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridViewPager">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridRecyclerView">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridRadioGroup">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridRadioButton">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+    <declare-styleable name="FloridEditText">
+        <attr name="florid_cornerRadius" />
+        <attr name="florid_stroke_color" />
+        <attr name="florid_strokeWidth" />
+        <attr name="florid_elevation" />
+        <attr name="florid_elevationShadowColor" />
+        <attr name="florid_elevationAmbientShadowColor" />
+        <attr name="florid_elevationSpotShadowColor" />
+    </declare-styleable>
+</resources>

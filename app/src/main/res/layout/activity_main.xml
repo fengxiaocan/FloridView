@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <com.app.weight.FloridRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.app.weight.FloridTextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="牛马啊"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            app:florid_cornerRadius="10dp"
+            app:florid_elevation="30dp"
+            app:florid_elevationShadowColor="#999915f4">
+
+        </com.app.weight.FloridTextView>
+    </com.app.weight.FloridRelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
